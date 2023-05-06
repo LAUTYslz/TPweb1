@@ -79,6 +79,14 @@ cursor: pointer;}
 #Garantia li{font-size: 20px; font-weight: 300;}
 
 
+/* Botones flotantes */
+#Botones_flotantes{position: fixed; z-index: 1; top: 92%; left: 88%;  }
+#Botones_flotantes img{height: 60px; border-radius: 50%;}
+#Botones_flotantes img:nth-child(1){background-color: #E2F26B; padding: 10px;}
+#Botones_flotantes img:nth-child(3){background-color: #9337ef; padding: 15px;}
+#Botones_flotantes img:hover{cursor: pointer;}
+
+
 /* --------------------------------FOOTER------------------------------------ */
 /* footer hr{width: 100% !important;} */
 footer {width: 70%; margin: auto;}
