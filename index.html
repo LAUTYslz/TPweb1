@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EducacionNET</title>
-    <link rel="stylesheet" href="/estilos/inicio.css">
+    <link rel="stylesheet" href="./estilos/inicio.css">
 </head>
 <body>
     <header>
     <nav>
     <a href="index.html"><span>EducacionNET</span> </a>
-    <div>
+    <div id="nav_cat">
         <a href="#">Cursos</a>
         <a href="#">Fechas proximas</a>
         <a href="#">Gift Card</a>
@@ -19,19 +19,20 @@
         <a href="#">Contacto</a>
     </div>
     
-    <input type="text">
+    <div id="carrito_buscador">
+        <input type="text">
+        <div id="carrito">
+            <img src="Multimedia/inicio/svg/carrito.svg" alt="">
+            <p>0</p>
+        </div>
+    </div>
     <!-- <form action=""></form> -->
     </nav>
     <hr>
     </header>
 
     <main>
-        <!-- <section id="Video">
-            <video src="./Multimedia/inicio/Efecto de video - Código Programación.mp4" autoplay muted></video>
-            <h1>CODE YOUR FUTURE</h1>
-            <p>Dejanos ser parte de tu progreso</p>
-        </section> -->
-
+       
         <section id="Titulo">
             <h1>Unite a la comunidad de <br> aprendizaje online en vivo más <br> grande de Latinoamérica</h1>
             <p>Clases online en vivo dictadas por expertos de la industria, enfoque 100% práctico,<br> mentorías personalizadas y acceso a una comunidad de +210.000 estudiantes.</p>
@@ -51,16 +52,19 @@
             </div>
         </section>
         
+        <section id="carrousel">
+            <img src="Multimedia/inicio/computadora.jpg" alt="">
+        </section>
 
-        <div id="Escuelas">
+        <section id="Escuelas">
             <h2>Centro educativo oficial</h2>
             <hr>
             
-            <img class="img_escuelas" src="/Multimedia/inicio/oracle.png" alt="">
-            <img class="img_escuelas" src="/Multimedia/inicio/microsoft.png" alt="">
-            <img class="img_escuelas" src="/Multimedia/inicio/Github_logotipo.png" alt="">
-            <img class="img_escuelas" src="/Multimedia/inicio/IBM.png" alt=""> 
-        </div>
+            <img class="img_escuelas" src="Multimedia/inicio/oracle.png" alt="">
+            <img class="img_escuelas" src="Multimedia/inicio/microsoft.png" alt="">
+            <img class="img_escuelas" src="Multimedia/inicio/Github_logotipo.png" alt="">
+            <img class="img_escuelas" src="Multimedia/inicio/IBM.png" alt=""> 
+        </section>
 
         <div id="Experiencia_aprendizaje">
             <div>
@@ -73,14 +77,14 @@
                 </ul>
             </div>
             <div>
-                <img src="/Multimedia/inicio/aprendiendo2.webp" alt="">
+                <img src="Multimedia/inicio/aprendiendo2.webp" alt="">
                 <!-- <img src="/Multimedia/inicio/aprendizaje.svg" alt=""> -->
             </div>
         </div>
 
         <div id="Carrer_advisor">
             <div>
-                <img src="/Multimedia/inicio/career_advisor.png" alt="">
+                <img src="Multimedia/inicio/career_advisor.png" alt="">
             </div>
             <div>
                 <h2>Career Advisor</h2>
@@ -115,7 +119,98 @@
                 </ul>
             </div>
             <div>
-                <img src="/Multimedia/inicio/garantia.png" alt="">
+                <img src="Multimedia/inicio/garantia.png" alt="">
+            </div>
+        </section>
+
+        <section id="Pasos">
+            <h2>Como me anoto?</h2>
+            <p>Si esta interesado en capacitarse con nosotros no dude en seguir estos pasos:</p>
+            <ul>
+                <li>Busque dentro de las categorías ofrecidas el curso que le interese</li>
+                <li>Encontrará una lista de fechas de inicio donde puede elegir la mas apropiada</li>
+                <li>Inicie sesión o inscríbase para poder seguir con la compra</li>
+                <li>Complete sus datos para completar la compra o añádalo al carrito para completarlos despues</li>
+                <li>Una vez realizada la compra recibirá un mail de confirmacion de inscripición</li>
+            </ul>
+        </section>
+
+        <section id="Destacados">
+            <h2>Crusos Populares</h2>
+            <section id="Cursos_destacados">
+            <div class="destacados">
+                <div class="datos">
+                    <h3>React JS</h3>
+                    <p><img src="Multimedia/inicio/svg/reloj.svg" alt=""> 8 semanas / 2 clases semanales de 2hs</p>
+                </div>
+                <hr>
+                <div class="precio">
+                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <h3><span>$14.658 ARS</span></h3>
+                </div>
+                <div class="boton_precio">
+                    <button>Ver curso</button>
+                </div>
+            </div>
+            <div class="destacados">
+                <div class="datos">
+                    <h3>JavaScript</h3>
+                    <p><img src="Multimedia/inicio/svg/reloj.svg" alt=""> 8 semanas / 2 clases semanales de 2hs</p>
+                </div>
+                <hr>
+                <div class="precio">
+                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <h3><span>$15.406 ARS</span></h3>
+                </div>
+                <div class="boton_precio">
+                    <button>Ver curso</button>
+                </div>
+            </div>
+            <div class="destacados">
+                <div class="datos">
+                    <h3>Wordpress</h3>
+                    <p><img src="Multimedia/inicio/svg/reloj.svg" alt=""> 5 semanas / 2 clases semanales de 2hs</p>
+                </div>
+                <hr>
+                <div class="precio">
+                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <h3><span>$16.800 ARS</span></h3>
+                </div>
+                <div class="boton_precio">
+                    <button>Ver curso</button>
+                </div>
+            </div>
+            <div class="destacados">
+                <div class="datos">
+                    <h3>Angular</h3>
+                    <p><img src="Multimedia/inicio/svg/reloj.svg" alt=""> 9 semanas / 2 clases semanales de 2hs</p>
+                </div>
+                <hr>
+                <div class="precio">
+                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <h3><span>$20.100 ARS</span></h3>
+                </div>
+                <div class="boton_precio">
+                    <button>Ver curso</button>
+                </div>
+            </div>
+            </section>
+        </section>
+
+        <section id="Medios_pago">
+            <div id="texto">
+                <h4>Formas de pago</h4>
+                <p>Pagá con tarjeta de crédito, débito, <br>transferencia o depósito bancario.</p>
+            </div>
+            <div id="img_pago">
+                <img src="Multimedia/inicio/svg/visa.svg" alt="">
+                <img src="Multimedia/inicio/svg/mastercard.svg" alt="">
+                <img src="Multimedia/inicio/svg/american express.svg" alt="">
+                <img src="Multimedia/inicio/svg/mercado pago.svg" alt="">
+                <img src="Multimedia/inicio/svg/bank.svg" alt="">
+                <img src="Multimedia/inicio/svg/rapipago.svg" alt="">
+                <img src="Multimedia/inicio/svg/PagoFacil.svg" alt="">
+
             </div>
         </section>
 
@@ -133,7 +228,7 @@
         <section id="redes">
             <h2>EducacionNET</h2>
             <div>
-                <img class="img_footer" src="/Multimedia/inicio/svg/facebook_svg.svg" alt="facebook">
+                <img class="img_footer" src="Multimedia/inicio/svg/facebook_svg.svg" alt="facebook">
                 <img class="img_footer" src="Multimedia/inicio/svg/linkedin_svg.svg" alt="linkedin">
                 <img class="img_footer" src="Multimedia/inicio/svg/blog_svg.svg" alt="blog">
                 <img class="img_footer" src="Multimedia/inicio/svg/youtube_svg.svg" alt="youtube">
@@ -147,20 +242,23 @@
         <section id="links_footer">
             <div>
                 <h3>NOSOTROS</h3>
-                <a href="#">Equipo</a>
-                <a href="#">ISTEA</a>
-                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Lautaro Alejandro Salazar 43.386.442</a>
+                <a href="#">Lautaro Alejandro Salazar 43.386.44</a>
+                <a href="#">Lautaro Alejandro Salazar 43.386.44</a>
             </div>
             <div>
-                <h3>ALUMNOS</h3>
+                <h3>MENU</h3><!--Antes alumnos-->
                 <a href="#">Alumni</a>
                 <a href="#">Blog</a>
                 <a href="#">Webinars gratis</a>
                 <a href="#">Portal de Empleos</a>
             </div>
             <div>
-                <h3>CORPORATIVO</h3>
-                <a href="#">Capacitaciones</a>
+                <h3>REDES</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Discord</a>
+                <a href="#">Linkedin</a>
             </div>
         </section>
         <hr>
